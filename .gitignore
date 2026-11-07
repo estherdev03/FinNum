@@ -1,0 +1,29 @@
+# Secrets
+.env
+
+# Personal notes
+TODO.md
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Tool caches
+.pytest_cache/
+.ruff_cache/
+
+# macOS
+.DS_Store
+
+# Hydra run outputs
+outputs/
+multirun/
+
+# Experiment tracking
+wandb/
+mlruns/
+
+# Model weights and checkpoints
+checkpoints/
+models/
