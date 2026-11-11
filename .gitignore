@@ -27,3 +27,9 @@ mlruns/
 # Model weights and checkpoints
 checkpoints/
 models/
+
+# VS Code
+.vscode/
+
+# Pytest coverage
+.coverage

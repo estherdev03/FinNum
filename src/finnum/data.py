@@ -7,6 +7,8 @@ from datasets import load_dataset
 import pandas as pd
 from os.path import join
 
+from finnum.prompts import prompt_formatter
+
 # Base url of data
 BASE_URL = "https://raw.githubusercontent.com/czyssrs/FinQA/main/dataset/"
 
@@ -41,3 +43,9 @@ for k in ["question", "program", "exe_ans"]:
 train_df = train_df.drop(columns="qa")
 test_df = test_df.drop(columns="qa")
 dev_df = dev_df.drop(columns="qa")
+
+# print(train_df["program"].iloc[31])
+# print(train_df["program"].iloc[1])
+for d in train_df["exe_ans"].iloc[:100]:
+    print(d)
+# print(train_df["table"].iloc[31])
